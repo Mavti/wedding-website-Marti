@@ -214,7 +214,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if  ( $('#invite_code').val() !== '141009' && $('#invite_code').val() !== '201009' ) {
+        if  ( $('#invite_code').val() !== 'afterparty20' && $('#invite_code').val() !== 'cerimonia14' ) {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbzJHNKHfe9EeMhhGTz8-0HlljqHgVC-MigT1tPuryUDBl1x_Q73fAnNGz6yf_gPRYM/exec', data)
