@@ -214,10 +214,10 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if  ( $('#invite_code').val() !== 'afterparty20' && $('#invite_code').val() !== 'cerimonia14' ) {
+        if  ( $('#invite_code').val() !== '100914' && $('#invite_code').val() !== '109020' ) {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbwYoQ7-l7uHKIaSwEJBgkHQ3mN_VecPQVv4w4znsI-NPm5-lb540FaMWAuCKL2OgmM/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbzA4qbdekQdcNcpH2YcU0vCioPDib4NuDmGu5-8bvz0TbDuW9busq8dgPxYliPBsJU/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
